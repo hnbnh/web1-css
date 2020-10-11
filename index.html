@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>hnb</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="header flex flex-items-center bg-color-white">
+    <nav class="relative flex flex-just-btw flex-items-center w-full p-20">
+      <input type="checkbox" id="menu" class="invisible toggle-nav" />
+      <label for="menu" class="flex invisible"></label>
+      <ul class="flex bg-color-white">
+        <li>
+          <a href="#about-me" class="underline-hv">Giới thiệu</a>
+        </li>
+        <li>
+          <a href="#schedule" class="underline-hv">Thời khóa biểu</a>
+        </li>
+        <li>
+          <a href="#friend-ref" class="underline-hv">Danh sách bạn bè</a>
+        </li>
+      </ul>
+      <figure class="m-0">
+        <img src="images/favicon.png" alt="logo" id="logo" />
+      </figure>
+    </nav>
+  </header>
+
+  <section
+    id="about-me"
+    class="about-me flex p-50 flex-just-around flex-items-center"
+  >
+    <!-- ABOUT ME -->
+    <article class="flex flex-column flex-self-center p-20">
+      <header class="flex p-left-10">
+        <h2 class="underline">Thông tin cá nhân</h2>
+      </header>
+
+      <div class="info-container flex card p-20">
+        <figure class="p-10 m-0">
+          <img class="border-circle" src="images/avatar.png" alt="avatar" />
+        </figure>
+
+        <div class="flex flex-column p-right-10 p-left-10">
+          <strong
+            id="name"
+            class="f-5em p-bottom-10 p-top-10"
+          >Huỳnh Ngọc Ninh Bình</strong>
+          <span class="p-bottom-5 f-24 color-primary">
+            18600004
+            <a href="https://hcmus.edu.vn/" class="color-primary">@hcmus</a>
+          </span>
+          <span
+            class="p-bottom-5 f-24 color-secondary"
+          >huynhninhbinh123@gmail.com</span>
+          <p>
+            trùm
+            <a
+              href="https://surviv.io/"
+              target="_blank"
+              class="underline-hv"
+            >@surviv.io</a>
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <aside class="about-me__aside">
+      <figure>
+        <img src="images/clumsy-green.svg" alt class />
+      </figure>
+    </aside>
+  </section>
+
+  <section id="schedule" class="schedule flex flex-just-center">
+    <!-- SCHEDULE TABLE -->
+    <article class="flex flex-column flex-just-center p-50">
+      <header class="flex flex-just-center m-20">
+        <h2 class="underline">Thời khóa biểu</h2>
+      </header>
+
+      <div class="table-wrapper card" style="overflow: auto">
+        <table class="schedule-table p-20">
+          <thead>
+            <tr>
+              <th>Tiết</th>
+              <th>Thứ 2</th>
+              <th>Thứ 3</th>
+              <th>Thứ 4</th>
+              <th>Thứ 5</th>
+              <th>Thứ 6</th>
+              <th>Thứ 7</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td data-label="Tiết">1 - 3</td>
+              <td data-label="Thứ 2"></td>
+              <td data-label="Thứ 3">QTCSDL</td>
+              <td data-label="Thứ 4">Web 1</td>
+              <td data-label="Thứ 5"></td>
+              <td data-label="Thứ 6"></td>
+              <td data-label="Thứ 7">QTCSDL</td>
+            </tr>
+
+            <tr>
+              <td data-label="Tiết">4 - 6</td>
+              <td data-label="Thứ 2"></td>
+              <td data-label="Thứ 3">LTUDQL 1</td>
+              <td data-label="Thứ 4">TTNT và UD</td>
+              <td data-label="Thứ 5"></td>
+              <td data-label="Thứ 6"></td>
+              <td data-label="Thứ 7">TTNT và UD</td>
+            </tr>
+
+            <tr>
+              <td data-label="Tiết">7 - 9</td>
+              <td data-label="Thứ 2">PTUDCSDL 1</td>
+              <td data-label="Thứ 3"></td>
+              <td data-label="Thứ 4">ĐLCM của ĐCSVN</td>
+              <td data-label="Thứ 5"></td>
+              <td data-label="Thứ 6">Web 1</td>
+              <td data-label="Thứ 7"></td>
+            </tr>
+
+            <tr>
+              <td data-label="Tiết">10 - 12</td>
+              <td data-label="Thứ 2"></td>
+              <td data-label="Thứ 3"></td>
+              <td data-label="Thứ 4">PTUDCSDL 1</td>
+              <td data-label="Thứ 5">LTUDQL 1</td>
+              <td data-label="Thứ 6"></td>
+              <td data-label="Thứ 7"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+  <section id="friend-ref" class="friend-ref p-50 flex flex-just-around">
+    <!-- FRIEND's REF -->
+    <figure class="m-0 flex">
+      <img src="images/zombieing.svg" alt class="m-auto" />
+    </figure>
+    <article class="p-20 card">
+      <header class="flex p-bottom-20">
+        <h2 class="underline m-auto">Bạn bè</h2>
+      </header>
+
+      <ol class="m-auto">
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum dolor</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum dolor</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            target="_blank"
+            class="underline-hv"
+          >lorem ipsum dolor sit amet</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum dolor</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="underline-hv">lorem ipsum dolor</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            target="_blank"
+            class="underline-hv"
+          >lorem ipsum dolor sit amet</a>
+        </li>
+      </ol>
+    </article>
+  </section>
+
+  <footer class="flex flex-items-center flex-just-btw p-20 bg-color-white">
+    <div class="flex flex-items-center">
+      <figure id="crew-logo" class="m-0">
+        <img src="images/aevuive.svg" alt="avatar" />
+      </figure>
+      <div class="m-20">©aevuive</div>
+    </div>
+    <div>Copyright @2020</div>
+  </footer>
+</body>
+</html>
